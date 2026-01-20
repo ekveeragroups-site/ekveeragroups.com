@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="images/fav_icon.png" type="image/png"> 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Ekveera Groups is a trusted construction consultancy company based in Ghatkesar, Hyderabad."/>
+  <meta name="description" content="Ekveera Groups – Construction Consultancy & Academy in Hyderabad" />
+  <title>Ekveera Groups</title>
 
-  <title>Ekveera Groups | Construction Consultancy & Academy</title>
-
-  <!-- Tailwind -->
+  <link rel="icon" href="images/fav_icon.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Tailwind Theme -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#C2410C',
-            secondary: '#7C2D12',
-            accent: '#FDBA74',
-            surface: '#FFF7ED',
-            dark: '#1F2933'
-          },
-          boxShadow: {
-            soft: '0 10px 30px rgba(0,0,0,0.08)',
-            hover: '0 20px 40px rgba(0,0,0,0.12)'
+            accent: '#8B3A2E',
+            muted: '#F5F5F5',
+            textDark: '#1F2933'
           }
         }
       }
@@ -35,128 +26,117 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body class="bg-white text-dark font-sans">
+<body class="bg-white text-textDark font-sans leading-relaxed">
 
 <!-- NAVBAR -->
-<nav class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-    <img src="images/logo.JPG" class="h-12 rounded-lg">
+<nav class="border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <img src="images/logo.JPG" class="h-11 rounded">
 
-    <div class="hidden md:flex space-x-6 font-medium">
-      <a href="#about" class="hover:text-primary transition">About</a>
-      <a href="#team" class="hover:text-primary transition">Team</a>
-      <a href="#contact" class="hover:text-primary transition">Contact</a>
+    <div class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="#about" class="hover:text-accent">About</a>
+      <a href="#team" class="hover:text-accent">Team</a>
+      <a href="#contact" class="hover:text-accent">Contact</a>
     </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<div class="relative h-72 overflow-hidden">
-  <img src="images/home/image_1.jpg" class="absolute inset-0 w-full h-full object-cover">
-  <div class="absolute inset-0 bg-black/40"></div>
-
-  <div class="relative h-full flex items-center justify-center text-center">
-    <h1 class="text-white text-4xl md:text-5xl font-bold tracking-tight">
-      Building Trust. Creating Excellence.
+<section class="py-24">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-semibold tracking-tight mb-6">
+      Ekveera Groups
     </h1>
+    <p class="text-lg text-gray-600">
+      Construction Consultancy & Professional Training Academy
+    </p>
   </div>
-</div>
+</section>
 
 <!-- ABOUT GROUP -->
-<section id="about" class="bg-surface py-20 rounded-b-[3rem]">
+<section id="about" class="bg-muted py-20">
   <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-4xl font-bold text-primary mb-10">Ekveera Groups</h2>
+    <h2 class="text-2xl font-semibold mb-10">Our Divisions</h2>
 
     <div class="grid md:grid-cols-2 gap-8">
-      <a href="eac.html" class="bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover hover:-translate-y-1 transition">
-        <h3 class="text-2xl font-semibold text-primary">Ekveera Architects & Constructions</h3>
-        <p class="mt-2 text-gray-600">Innovative designs & quality construction</p>
+      <a href="eac.html" class="border border-gray-200 p-8 hover:border-accent transition">
+        <h3 class="text-lg font-medium mb-2">Ekveera Architects & Constructions</h3>
+        <p class="text-gray-600 text-sm">
+          Architectural design and quality construction services.
+        </p>
       </a>
 
-      <a href="sva.html" class="bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover hover:-translate-y-1 transition">
-        <h3 class="text-2xl font-semibold text-primary">Soham Vision Academy</h3>
-        <p class="mt-2 text-gray-600">Skill-building for future professionals</p>
+      <a href="sva.html" class="border border-gray-200 p-8 hover:border-accent transition">
+        <h3 class="text-lg font-medium mb-2">Soham Vision Academy</h3>
+        <p class="text-gray-600 text-sm">
+          Skill development and professional training programs.
+        </p>
       </a>
     </div>
   </div>
 </section>
 
 <!-- ABOUT US -->
-<section class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-primary mb-6">About Us</h2>
-    <p class="text-lg text-gray-700 leading-relaxed max-w-4xl">
-      Ekveera Groups is committed to excellence, sustainability, and innovation.
-      We deliver impactful solutions in construction and education, shaping a better future.
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-4 max-w-4xl">
+    <h2 class="text-2xl font-semibold mb-6">About Us</h2>
+    <p class="text-gray-700">
+      Ekveera Groups is built on the principles of integrity, quality, and long-term value.
+      We work across construction and education with a focus on sustainability,
+      professionalism, and dependable delivery.
     </p>
   </div>
 </section>
 
 <!-- TEAM -->
-<section id="team" class="py-20 bg-surface">
+<section id="team" class="bg-muted py-20">
   <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-primary mb-12">The Visionaries</h2>
+    <h2 class="text-2xl font-semibold mb-12">Leadership</h2>
 
-    <div class="grid sm:grid-cols-2 gap-10">
-      <div class="bg-white p-10 rounded-3xl shadow-soft hover:shadow-hover transition text-center">
-        <img src="images/teamPics/chairperson.png" class="w-40 h-40 mx-auto rounded-full border-4 border-accent mb-4">
-        <h4 class="text-xl font-semibold text-primary">Kotari Nandini Chandravathi</h4>
-        <p class="text-gray-500">Chairperson</p>
+    <div class="grid sm:grid-cols-2 gap-12">
+      <div class="text-center">
+        <img src="images/teamPics/chairperson.png" class="w-36 h-36 mx-auto rounded-full mb-4 grayscale">
+        <h4 class="font-medium">Kotari Nandini Chandravathi</h4>
+        <p class="text-sm text-gray-500">Chairperson</p>
       </div>
 
-      <div class="bg-white p-10 rounded-3xl shadow-soft hover:shadow-hover transition text-center">
-        <img src="images/teamPics/managing director.png" class="w-40 h-40 mx-auto rounded-full border-4 border-accent mb-4">
-        <h4 class="text-xl font-semibold text-primary">Anil Podeti</h4>
-        <p class="text-gray-500">Managing Director</p>
+      <div class="text-center">
+        <img src="images/teamPics/managing director.png" class="w-36 h-36 mx-auto rounded-full mb-4 grayscale">
+        <h4 class="font-medium">Anil Podeti</h4>
+        <p class="text-sm text-gray-500">Managing Director</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-20 bg-white">
+<section id="contact" class="py-20">
   <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-primary mb-10">Contact Us</h2>
+    <h2 class="text-2xl font-semibold mb-10">Contact</h2>
 
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-surface p-6 rounded-2xl shadow-soft">
-        <p class="font-semibold">📍 Address</p>
-        <p class="text-gray-600 mt-1">Ghatkesar, Telangana</p>
+    <div class="grid md:grid-cols-2 gap-8 text-sm">
+      <div>
+        <p class="font-medium mb-1">Address</p>
+        <p class="text-gray-600">
+          2nd Floor, Jyothi Arcade,<br>
+          Ghatkesar, Telangana – 501301
+        </p>
       </div>
 
-      <div class="bg-surface p-6 rounded-2xl shadow-soft">
-        <p class="font-semibold">📞 Phone</p>
-        <p class="text-gray-600 mt-1">+91 9939 29 0303</p>
+      <div>
+        <p class="font-medium mb-1">Communication</p>
+        <p class="text-gray-600">Phone: +91 9939 29 0303</p>
+        <p class="text-gray-600">Email: ekveeragroups@gmail.com</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-secondary text-white mt-20">
-  <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
-    <div>
-      <h3 class="text-xl font-semibold">Ekveera Groups</h3>
-      <p class="text-sm mt-2">Designing dreams. Building futures.</p>
-    </div>
-
-    <div>
-      <h4 class="font-semibold mb-2">Quick Links</h4>
-      <ul class="text-sm space-y-1">
-        <li><a href="#about" class="hover:text-accent">About</a></li>
-        <li><a href="#team" class="hover:text-accent">Team</a></li>
-        <li><a href="#contact" class="hover:text-accent">Contact</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <p class="text-sm">📧 ekveeragroups@gmail.com</p>
-      <p class="text-sm mt-1">📞 +91 9939 29 0303</p>
-    </div>
-  </div>
-
-  <div class="bg-black/20 text-center py-3 text-sm">
-    © 2025 Ekveera Groups. All rights reserved.
+<footer class="border-t border-gray-200 py-8 mt-16">
+  <div class="max-w-6xl mx-auto px-4 text-sm text-gray-500 flex justify-between">
+    <p>© 2025 Ekveera Groups</p>
+    <p>Hyderabad</p>
   </div>
 </footer>
 
